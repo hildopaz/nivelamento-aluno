@@ -11,6 +11,7 @@ desafio = 1232000000
 chocolate = 3
 tempo_viver = 80
 
+    
 puts "Quantas horas há em um ano?"
 puts "Resposta:" +(horas*dias).to_s
 puts
@@ -28,4 +29,4 @@ puts "Resposta:" +(tempo_viver*meses*chocolate).to_s
 puts
 
 puts "Se minha idade é de 1232 milhões de segundos, qual é minha idade em anos?"
-puts "Resposta:" +(desafio/dias/horas/minutos/segundos).to_s
+puts "Resposta:" +(desafio.to_f/dias/horas/minutos/segundos).to_s
