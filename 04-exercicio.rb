@@ -9,22 +9,22 @@
 #Dica: no Ruby, a constante PI é fornecedida por 'Math::PI' (rode um 'puts Math::PI' no 'irb' para ver o que aparece)
 #Escreva códigos para testar cada uma das funções.
 
-def raio_circulo(raio)
-    soma = raio*2
-    return soma
+def diametro_circulo(raio)
+    return  raio*2
 end
 
-def comprimento_circulo(diametro)
-    soma = diametro*Math::PI
- return soma
+
+def comprimento_circulo(raio)
+   
+ return raio * Math::PI
 end
 
-def area_circulo(raiov2)
-    soma = raiov2 **2 *Math::PI
-    return soma
+def area_circulo(raio)
+   
+return  raio **2 *Math::PI
 end
 
-soma = raio_circulo(1)+comprimento_circulo(1)+area_circulo(1)
+raio = 8
+calculo = area_circulo(raio)
 
-print soma
-
+puts calculo
