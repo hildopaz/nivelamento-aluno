@@ -23,6 +23,8 @@
 #Se houver alguma invalidação nas regras acima, retornar uma string que descreva a regra que foi invalidada.
 #Obs. 2: escreva testes para demonstrar que o sistema está funcionando.
 
+
+
 def  fase_pandemica(taxa_vacinacao, fator_transmissor, taxa_ocupacao)
     if
        taxa_vacinacao  >= 0 && taxa_vacinacao <=1
@@ -43,7 +45,7 @@ elsif taxa_ocupacao > 0.65 && taxa_ocupacao <=0.8 && fator_transmissor <1
 elsif taxa_ocupacao > 0.8 && taxa_ocupacao <=0.9 && fator_transmissor <1
     return "Vermelha"
 
-else taxa_ocupacao > 0.9 && taxa_ocupacao <=1
+elsif taxa_ocupacao > 0.9 && taxa_ocupacao <=1
         return "Roxa"
 end
 
@@ -53,7 +55,7 @@ else
     end
 end
 
-a_cor_é = fase_pandemica(0.1, 0.1, 0.91)
+a_cor_é = fase_pandemica(0.1, 0, 1.1)
 
 if a_cor_é == nil
     puts "Insira um valor valido"
@@ -61,3 +63,4 @@ else
     puts" Nossa fase atual é: " +a_cor_é
     
 end
+
