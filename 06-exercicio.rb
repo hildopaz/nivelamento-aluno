@@ -43,7 +43,7 @@ elsif taxa_ocupacao > 0.65 && taxa_ocupacao <=0.8 && fator_transmissor <1
 elsif taxa_ocupacao > 0.8 && taxa_ocupacao <=0.9 && fator_transmissor <1
     return "Vermelha"
 
-elsif taxa_ocupacao > 0.9 && taxa_ocupacao <=1
+else taxa_ocupacao > 0.9 && taxa_ocupacao <=1
         return "Roxa"
 end
 
