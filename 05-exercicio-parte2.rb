@@ -16,3 +16,4 @@ idade = gets.to_f
 calculo = calcular_batimentos(idade)
 
 puts "Seu coração já bateu " +calculo.to_s + " Vezes"
+
