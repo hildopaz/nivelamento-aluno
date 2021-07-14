@@ -53,11 +53,11 @@ else
     end
 end
 
-calculo = fase_pandemica(0.1, 0.1, 0.91)
+a_cor_é = fase_pandemica(0.1, 0.1, 0.91)
 
-if calculo == nil
+if a_cor_é == nil
     puts "Insira um valor valido"
 else
-    puts" Nossa fase atual é: " +calculo
+    puts" Nossa fase atual é: " +a_cor_é
     
 end
