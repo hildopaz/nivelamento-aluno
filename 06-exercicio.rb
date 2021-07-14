@@ -26,7 +26,7 @@
 
 
 def  fase_pandemica(taxa_vacinacao, fator_transmissor, taxa_ocupacao)
-    if
+if
        taxa_vacinacao  >= 0 && taxa_vacinacao <=1
         fator_transmissor >= 0
         taxa_ocupacao >= 0 && taxa_ocupacao <=1 
@@ -36,7 +36,7 @@ if taxa_vacinacao >0.8
 elsif taxa_ocupacao > 0 && taxa_ocupacao <=0.5 && fator_transmissor <1
     return "Verde"
 elsif taxa_ocupacao > 0.5 && taxa_ocupacao <=0.65 && fator_transmissor <1
-    return "Amarelo"
+    return "Amarela"
 
 elsif taxa_ocupacao > 0.65 && taxa_ocupacao <=0.8 && fator_transmissor <1
     return "Laranja"
@@ -46,7 +46,7 @@ elsif taxa_ocupacao > 0.8 && taxa_ocupacao <=0.9 && fator_transmissor <1
     return "Vermelha"
 
 elsif taxa_ocupacao > 0.9 && taxa_ocupacao <=1
-        return "Roxa"
+    return "Roxa"
 end
 
 else
@@ -55,12 +55,24 @@ else
     end
 end
 
-a_cor_é = fase_pandemica(0.1, 0, 1.1)
+a_cor_é = fase_pandemica(0.7, 0.1, 0.51)
 
 if a_cor_é == nil
     puts "Insira um valor valido"
 else
-    puts" Nossa fase atual é: " +a_cor_é
+    
+    puts "A fase atual que estamos é: " +a_cor_é 
     
 end
+    
+
+    #TESTES
+    puts
+    puts fase_pandemica(0.81, 0.1, 0.32) #AZUL
+    puts fase_pandemica(0.1, 0.7, 0.5) # Teste do enunciado (VERDE)
+    puts fase_pandemica(0.7, 0.1, 0.51) # AMARELA
+    puts fase_pandemica(0.5, 0.1, 0.67) # LARANJA
+    puts fase_pandemica(0.4, 0.1, 0.81) # VERMELHA
+    puts fase_pandemica(0.2, 0.1, 0.91) # ROXA
+    
 
