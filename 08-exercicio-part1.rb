@@ -12,11 +12,10 @@ print "Por favor, digite um numero da tabuada: "
 numero = gets.chomp.to_i
 
 
-for re in (1...11)
+for re in (1..10)
     if  soma =numero*re
          
         puts numero.to_s+ " x " + re.to_s + " = " + soma.to_s
     end
     
 end
-
