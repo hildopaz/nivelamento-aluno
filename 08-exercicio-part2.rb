@@ -10,11 +10,11 @@
 contador = 2
 resultado = 1
 
-print "Por favor, digite um numero :"
+print "Digite um numero 1:"
 num1 = gets.chomp.to_i
 puts
 
-print "Agora, digite outro numero : "
+print "Digite um numero 2: "
 num2 = gets.chomp.to_i
 puts
 
@@ -34,5 +34,5 @@ else
             contador = contador +1    
         end
     end
-    puts "O MMC é = " +resultado.to_s
+    puts "O MMC é: " +resultado.to_s
 end                 
