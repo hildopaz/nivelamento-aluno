@@ -22,7 +22,10 @@ def remove_da_posicao (array, posicao)
 end
 
 numero = [10, 30, 20, 50]
-posicao= 2
+print numero
+puts
+print "Escolha a posicao que quer retirar: "
+posicao = gets.chomp.to_i
               
    
 print remove_da_posicao(numero, posicao)
