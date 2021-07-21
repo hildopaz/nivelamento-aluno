@@ -17,7 +17,7 @@ end
 
 puts(mediana([10, 0, -1, -500, 20, 100])) # deve imprimir 5.0
 puts(mediana([10, 0, -1, -500, 20]))      # deve imprimir 0.0
-puts(mediana([-20, -50, 30, 50]))
+
 
 
 
